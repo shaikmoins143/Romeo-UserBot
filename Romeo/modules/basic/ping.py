@@ -68,23 +68,18 @@ async def speed_test(client: Client, message: Message):
 async def pingme(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    xx = await message.reply_text("**0% ▒▒▒▒▒▒▒▒▒▒**")
+    xx = await message.reply_text("**🇵𝐎𝐍𝐆**")
     try:
        await message.delete()
     except:
        pass
-    await xx.edit("**20% ██▒▒▒▒▒▒▒▒**")
-    await xx.edit("**40% ████▒▒▒▒▒▒**")
-    await xx.edit("**60% ██████▒▒▒▒**")
-    await xx.edit("**80% ████████▒▒**")
-    await xx.edit("**100% ██████████**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await xx.edit(
-        f"❏ **☞︎︎︎ 🇵𝐎𝐍𝐆 ☟︎︎︎**\n"
-        f"├• **🇸𝐏𝐄𝐄𝐃 ❥︎** `%sms`\n"
-        f"├• **🇺𝐏★🇹𝐈𝐌𝐄 ❥︎** `{uptime}` \n"
-        f"└• **🇴𝐖𝐍𝐄𝐑 ❥︎** {client.me.mention}" % (duration)
+        f"**❂ 🇵𝐎𝐍𝐆 ❂**\n\n"
+        f"**🇸𝐏𝐄𝐄𝐃 ❥︎** `%sms`\n"
+        f"**🇺𝐏★🇹𝐈𝐌𝐄 ❥︎** `{uptime}` \n"
+        f"**🇴𝐖𝐍𝐄𝐑 ❥︎** {client.me.mention}" % (duration)
     )
 
 
