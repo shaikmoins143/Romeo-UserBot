@@ -26,7 +26,7 @@ def get_text(message: Message) -> [None, str]:
 
 @Client.on_message(filters.command(["uff", "x", "op"], ".") & filters.me)
 async def uptotelegraph(client: Client, message: Message):
-    tex = await message.edit_text("`Processing . . .`")
+    tex = await message.edit_text("uff")
     if not message.reply_to_message:
         await tex.edit(
             "**Reply to an Image or text.**"
@@ -44,7 +44,7 @@ async def uptotelegraph(client: Client, message: Message):
             os.remove(m_d)
             return
         U_done = (
-            f"**uff**"
+            f"uff"
         )
         await tex.edit(U_done)
         os.remove(m_d)
