@@ -29,13 +29,15 @@
 
 `curl -fssL https://deb.nodesource.com/setup_17.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm`
 
-`git clone https://github.com/Romeo-RJ/ROMEO-USERBOT`
+`git clone https://github.com/Romeo-RJ/Romeo-UserBot`
 
-`cd ROMEO-USERBOT`
+`cd Romeo-UserBot`
 
 `sudo apt install nano`
 
 `nano config.py`
+
+`Ctrl + x + y`
 
 `sudo apt install screen`
 
