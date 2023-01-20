@@ -15,12 +15,12 @@
             "value": ""
         },
         "SUDO_USERS": {
-            "description": "Fill there your I'd go to @missrose_bot pm and type /id",
+            "description": "Fill there your I'd go to @MissRose_bot pm and type /id",
             "required": true,
             "value": "5368154755"
         },
         "OWNER_ID": {
-            "description": "Fill there your I'd go to @Zaid2_Robot pm and type /id",
+            "description": "Fill there your I'd go to @MissRose_bot pm and type /id",
             "required": true,
             "value": "5368154755"
         },
