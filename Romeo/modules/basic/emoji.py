@@ -1,6 +1,7 @@
 from pyrogram import *
 from pyrogram.types import *
 from Romeo.modules.help import *
+from Romeo import SUDO_USER
 
 from Romeo.helper.basic import edit_or_reply, get_text
 
@@ -125,7 +126,9 @@ itachiemoji = [
 ]
 
 
-@Client.on_message(filters.command('emoji', ["."]) & filters.me)
+@Client.on_message(
+    filters.command(["emoji", "ej"], ".") & (filters.me | filters.user(SUDO_USER))
+)
 async def emoji(client: Client, message: Message):
     op = await edit_or_reply(message, "`Emojifying the text..`")
     args = get_text(message)
@@ -149,7 +152,9 @@ async def emoji(client: Client, message: Message):
     
 
 
-@Client.on_message(filters.command('cmoji', ["."]) & filters.me)
+@Client.on_message(
+    filters.command(["cmoji", "cj"], ".") & (filters.me | filters.user(SUDO_USER))
+)
 async def cmoji(client: Client, message: Message):
     op = await edit_or_reply(message, "`Emojifying the text..`")
     args = get_text(message)
