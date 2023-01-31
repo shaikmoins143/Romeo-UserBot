@@ -24,7 +24,7 @@ def increment_spam_count():
 
 
 def spam_allowed():
-    return SPAM_COUNT[0] < 9999999
+    return SPAM_COUNT[0] < 9999
 
 async def extract_args(message, markdown=True):
     if not (message.text or message.caption):
